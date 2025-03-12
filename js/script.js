@@ -1,44 +1,5 @@
-let juegos = [];
-let noticias = [];
-
-Promise.all([
-    fetch('/jesalstore/data/juegos.json')
-        .then(res => {
-            if (!res.ok) throw new Error(`Error al cargar juegos: ${res.status}`);
-            return res.json();
-        }),
-    fetch('/jesalstore/data/noticias.json')
-        .then(res => {
-            if (!res.ok) throw new Error(`Error al cargar noticias: ${res.status}`);
-            return res.json();
-        })
-])
-.then(([juegosData, noticiasData]) => {
-    juegos = juegosData;
-    noticias = noticiasData;
-
-    console.log("✅ Juegos cargados:", juegos);
-    console.log("✅ Noticias cargadas:", noticias);
-
-    cargarContenidoInicio();
-    cargarContenidoNoticias();
-    mostrarSeccion('homeSection');
-})
-.catch(error => console.error("❌ Error al cargar datos:", error));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import juegos from "./data/juegos.js";
+import noticias from "./data/noticias.js";
 
         let lastSection = 'homeSection';
 
