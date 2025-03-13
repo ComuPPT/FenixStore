@@ -1,5 +1,5 @@
-import juegos from "./data/juegos.js";
-import noticias from "./data/noticias.js";
+import juegos from "../data/juegos.js";
+import noticias from "../data/noticias.js";
 
         let lastSection = 'homeSection';
 

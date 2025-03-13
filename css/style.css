@@ -6,7 +6,7 @@
         }
     
         body {
-            background: linear-gradient(135deg, #2d2d2d, #5c5c5c, #8a8a8a);
+            background: linear-gradient(135deg, #2f3749, #111214) fixed;
             line-height: 1.6;
             color: #333;
         }
@@ -19,16 +19,18 @@
         }
     
         .navbar {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            padding: 1rem 2rem;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
+                background: rgba(42 82 152 / 60%);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex
+;
+    align-items: center;
+    border-bottom: 2px solid #1c82bd;
+    backdrop-filter: saturate(180%) blur(20px);
         }
     
         .nav-content {
